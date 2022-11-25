@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div>
+            <ul class="Header">
+                <li> <a class="HeaderItem" href="index.html">Home</a></li>
+                <li> <a class="HeaderItem" href="pictures.html">My Pictures</a></li>
+                <li> <a class="HeaderItem" href="about_me.html">about me</a></li>
+                <li> <a class="current" class="HeaderItem" href="Greetings.html">contact</a></li>
+            </ul>
+        </div>
+
+        <div id="greetingsDiv">
+            <div id="form">
+                <div class="greetElement">
+                    <span>Username:</span>
+                    <input type="text" id="username" />
+                    <span id="usernameErrorSpan" class="hidden">
+                        The username should be at least 3 chars
+                    </span>
+                </div>
+            
+                <div class="greetElement">
+                    <span>phone:</span>
+                    <input type="phone" id="phone" />
+                    <span id="phoneErrorSpan" class="hidden">
+                       The phone mast contain !
+                    </span>
+                </div>
+            
+                <div class="greetElement">
+                    <span>Email:</span>
+                    <input type="email" id="email" />
+                    <span id="emailErrorSpan" class="hidden">
+                       The email is required;
+                    </span>
+                </div>
+            
+                <div class="greetElement">
+                    <span>message:</span>
+                    <input type="text" id="message" />
+                    <span id="messageErrorSpan" class="hidden">
+                        The message should be at least 3 chars
+                    </span>
+                </div>
+            
+                
+                <button class="greetElement" onclick="validate()">send the greeting</button>
+                <br />
+                
+            </div>
+            
+        </div >   
+        <div id="success" class="hidden">
+            <span>The greeting was sent successfully!</span>
+
+        </div>
+
+    </body>
+</html>
